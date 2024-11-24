@@ -245,9 +245,33 @@ p {
     font-size: 1rem;
     color: #555;
 }
+.guide {
+    font-family: 'Roboto', sans-serif; /* Use a clean, readable font */
+    font-size: 2rem; /* Set the text size */
+    color: #000000; /* Grayish color for the text */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add spacing above and below */
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Optional: Capitalize all letters */
+    letter-spacing: 2px; /* Optional: Add spacing between letters */
+    background-color: #e8bbbb; /* Optional: Light background for emphasis */
+    padding: 10px 20px; /* Optional: Add padding for better visual balance */
+    border-radius: 8px; /* Optional: Rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+.footer {
+  
+    width: 100%; /* Set the width of the box */
+    padding: 20px; /* Add space inside the box */
+    margin: 20px auto; /* Center the box horizontally */
+    background-color: #f9f9f9; /* Light background color */
+    border: 2px solid #ddd; /* Border with a light gray color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align content inside */
 
-
-
+padding: 5%;
+}
 
 
 /* For smaller screens (e.g., tablets and mobile) */
