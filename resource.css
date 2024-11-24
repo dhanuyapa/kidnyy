@@ -60,7 +60,7 @@ p {
 }
 /* Title styling */
 .Title {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     position: absolute;
     margin-left: 90px;
     top: 30%;
@@ -120,6 +120,7 @@ p {
     color: #000000;
     margin-left:60px;
     margin-top: -110px;
+    font-family: Arial, sans-serif;
 }
 .red {
     font-size: 3.2rem;
@@ -139,6 +140,7 @@ p {
 }
 
 .content {
+    font-family: Arial, sans-serif;
     font-size: 1rem;
     margin-left: 50px;
     color: #000000;
@@ -154,6 +156,7 @@ p {
     background-color: #ffffff; /* Optional: Background color for contrast */
 }
 .content2 {
+    font-family: Arial, sans-serif;
     font-size: 1.2rem; /* Slightly larger font size */
     color: #c61010;
     font-weight: bold; /* Optional: Add bold styling */
@@ -230,6 +233,7 @@ margin-top: 170px;
 
 /* Optional: Styling the description */
 .grid-item p {
+    font-family: Arial, sans-serif;
     font-size: 1rem;
     color: #555;
     margin-top: 10px;
@@ -239,14 +243,16 @@ margin-top: 170px;
 .grid-item h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    font-family: Arial, sans-serif;
 }
 
 .grid-item p {
     font-size: 1rem;
     color: #555;
+    font-family: Arial, sans-serif;
 }
 .guide {
-    font-family: 'Roboto', sans-serif; /* Use a clean, readable font */
+    font-family: Arial, sans-serif; /* Use a clean, readable font */
     font-size: 2rem; /* Set the text size */
     color: #000000; /* Grayish color for the text */
     text-align: center; /* Center the text */
@@ -312,6 +318,26 @@ padding: 5%;
     color: #000000; /* Gray color for subtlety */
     text-align: left;
     font-weight: bold; /* Align text to the right */
+}
+.hover-image {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth effect */
+}
+
+.hover-image:hover {
+    transform: scale(1.1); /* Image zooms in */
+    opacity: 0.8;         /* Image becomes slightly transparent */
+}
+
+
+.hover-image1 {
+    filter: grayscale(0%);
+   
+}
+
+.hover-image1:hover {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; 
+    /* Or use scaleY(-1) for a vertical flip */
 }
 
 
@@ -388,5 +414,65 @@ padding: 5%;
 
     .grid-container {
         grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items */
+        padding: 20px 0; /* Adjust padding for smaller screens */
+    }
+
+    .footer .footer-head {
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+
+    .footer .footer-subtext {
+        width: 80%; /* Make the content width smaller */
+        text-align: center; /* Center-align the text */
+    }
+
+    .footer .footer-right {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 10px; /* Add some margin */
+    }
+
+    .footer-image img {
+        width: 150px; /* Smaller image for smaller screens */
+        height: 150px;
+    }
+
+ 
+
+}
+
+/* For very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .footer .footer-head {
+        font-size: 2rem; /* Reduce the font size for very small screens */
+    }
+
+    .footer .footer-subtext {
+        width: 100%; /* Make the subtext span the full width */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .footer .footer-right {
+        font-size: 0.8rem; /* Smaller text for mobile */
+    }
+
+    .footer-image img {
+        width: 120px; /* Further reduce the image size */
+        height: 120px;
     }
 }
