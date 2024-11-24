@@ -126,6 +126,7 @@ p {
     margin-left:50px;
 }
 .arti {
+    
     display: flex; /* Creates a horizontal layout */
     justify-content: space-between; /* Spaces items evenly */
     align-items: center; /* Aligns items vertically */
@@ -139,7 +140,7 @@ p {
 .content {
     font-size: 1rem;
     margin-left: 50px;
-    color: #666;
+    color: #000000;
     margin-top: 10px;
     width: 600px; /* Set the width of the content */
     height: 560px; /* Set the height of the content */
@@ -149,7 +150,7 @@ p {
     padding: 10px; /* Optional: Adds padding for better readability */
     border: 1px solid #ddd; /* Optional: Adds a border for structure */
     border-radius: 8px; /* Optional: Rounded corners */
-    background-color: #f9f9f9; /* Optional: Background color for contrast */
+    background-color: #ffffff; /* Optional: Background color for contrast */
 }
 .content2 {
     font-size: 1.2rem; /* Slightly larger font size */
@@ -197,19 +198,43 @@ p {
 }
 
 /* Grid Layout */
+/* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between grid items */
     margin-top: 30px;
+    padding: 5%;
 }
 
+/* Grid Item */
 .grid-item {
-    background-color: white;
+    background-color: rgb(229, 146, 146);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers content inside the grid item */
 }
+
+/* Yoga image container */
+
+
+/* Styling the image */
+.yoga img {
+    width: 350px; /* Make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image doesn't stretch beyond container */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow around the image */
+}
+
+/* Optional: Styling the description */
+.grid-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
 
 .grid-item h2 {
     font-size: 1.5rem;
@@ -220,6 +245,11 @@ p {
     font-size: 1rem;
     color: #555;
 }
+
+
+
+
+
 /* For smaller screens (e.g., tablets and mobile) */
 @media (max-width: 768px) {
     .header-container {
@@ -256,6 +286,11 @@ p {
         grid-template-columns: 1fr;
         margin-top: 20px;
     }
+
+
+
+
+
 }
 
 /* For very small screens (e.g., mobile) */
